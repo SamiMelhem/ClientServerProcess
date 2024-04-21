@@ -23,7 +23,7 @@ typedef char byte_t;
 
 
 // different types of messages
-enum MESSAGE_TYPE {UNKNOWN_MSG, DATA_MSG, FILE_MSG, QUIT_MSG};
+enum MESSAGE_TYPE {UNKNOWN_MSG, DATA_MSG, FILE_MSG, NEWCHANNEL_MSG, QUIT_MSG};
 
 
 // message requesting a data point
