@@ -70,11 +70,11 @@ TCPRequestChannel::TCPRequestChannel (const std::string _ip_address, const std::
     if (_ip_address.empty()){ // First steps for setting up the server
         address.sin_addr.s_addr = INADDR_ANY;
 
-        int yes = 1; // Enable the reuse option
-        if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes)) < 0) {
-            perror("setsockopt(SO_REUSEADDR) failed");
-            exit(EXIT_FAILURE);
-        }
+        // int yes = 1; // Enable the reuse option
+        // if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes)) < 0) {
+        //     perror("setsockopt(SO_REUSEADDR) failed");
+        //     exit(EXIT_FAILURE);
+        // }
 
         if (bind(sockfd, (struct sockaddr *)&address, sizeof(address)) < 0) { 
             perror("Bind failed.");
