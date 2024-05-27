@@ -15,7 +15,6 @@ This project extends the IPC capabilities of a client-server implementation usin
 To set up the Client Server Process on your local system, follow these steps:
 
 ```bash
-Copy code
 git clone https://github.com/SamiMelhem/Client-Server-Process.git
 cd Client-Server-Process
 make
@@ -24,13 +23,11 @@ make
 Run the server using the following command:
 
 ```bash
-Copy code
 ./server -r <port number>
 ```
 Run the client using the following command:
 
 ```bash
-Copy code
 ./client -a <IP address> -r <port number> [additional options]
 ```
 ## File Descriptions
